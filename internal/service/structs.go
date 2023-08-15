@@ -8,10 +8,10 @@ type BlocksResponse struct {
 }
 
 type MessageInfo struct {
-	Cid             string `json:"Cid"`
+	Cid             string `json:"cid"`
 	StorageProvider string `json:"StorageProvider"`
-	Message         int    `json:"Message"`
-	Reward          string `json:"Reward"`
+	Message         int    `json:"message"`
+	Reward          string `json:"reward"`
 }
 
 // BlockInfoResponse  block info
@@ -27,7 +27,7 @@ type BlockInfoResponse struct {
 	ParentBaseFeeRate string `json:"parentBaseFeeRate"`
 	Ticket            string `json:"ticket"`
 	StateRoot         string `json:"stateRoot"`
-	Reward            string `json:"Reward"`
+	Reward            string `json:"reward"`
 }
 
 type BlockReward struct {
