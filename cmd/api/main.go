@@ -5,6 +5,7 @@ import (
 	"eth/libs/config"
 	"eth/libs/db"
 	"eth/ruter"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"net/http"
@@ -23,6 +24,7 @@ func main() {
 
 	// 启动gin
 	r := gin.Default()
+	r.Use(cors.Default())
 	ruter.Ruter(r)
 
 	s := &http.Server{
